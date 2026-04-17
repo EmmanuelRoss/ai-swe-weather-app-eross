@@ -1,37 +1,3 @@
-/*//main.js - Punto de entrada de la aplicación
-import { getCoordinates } from './api/geoService.js';
-import { getWeather } from './api/weatherService.js';
-import { renderWeather } from './ui/renderWeather.js';
-import { showLoading, showError, clearStatus } from './ui/uiState.js';
-
-//Obtener referencia al formulario
-const form = document.querySelector('#search-form');
-
-//Escuchar el evento de envío del formulario
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-
-  const city = document.querySelector('#city').value;
-
-  try {
-    // Mostrar estado de carga mientras se obtienen los datos
-    showLoading();
-
-    // Obtener las coordenadas de la ciudad
-    const location = await getCoordinates(city);
-    //Obtener el clima usando las coordenadas
-    const weather = await getWeather(location.latitude, location.longitude);
-
-    //Renderizar resultados y limpiar estados anteriores
-    clearStatus();
-    renderWeather(weather, location);
-
-  } catch (err) {
-    //Mostrar mensaje de error en caso de fallo
-    showError(err.message);
-  }
-});*/
-
 import { getCoordinates } from './api/geoService.js';
 import { getWeather } from './api/weatherService.js';
 import { renderWeather } from './ui/renderWeather.js';
