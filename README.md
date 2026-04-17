@@ -1,59 +1,59 @@
-# 🌤️ Weather App - Aplicación de Clima para curso AI-SWE-Generation
+# Weather App - Aplicación de Clima para curso AI-SWE-Generation
 
 Una aplicación web moderna, rápida y segura que permite consultar el clima en tiempo real de cualquier ciudad del mundo. Construida con arquitectura modular, caché inteligente y más de 10 variables meteorológicas.
 
-**🔗 Demo:** [(https://drive.google.com/file/d/1ovq6cfeNRr47Y2RKc9jPG-SFOPhF7S0Z/view?usp=sharing&t=35.906)]  
-**📦 Versión:** 2.0.0  
-**📅 Última actualización:** 2026-04-17
+**Demo:** [(https://drive.google.com/file/d/1ovq6cfeNRr47Y2RKc9jPG-SFOPhF7S0Z/view?usp=sharing&t=35.906)]  
+**Versión:** 2.0.0  
+**Última actualización:** 2026-04-17
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
-- [✨ Características](#-características)
-- [🚀 Inicio Rápido](#-inicio-rápido)
-- [📖 Guía de Uso](#-guía-de-uso)
-- [🏗️ Estructura del Proyecto](#-estructura-del-proyecto)
-- [🔒 Seguridad](#-seguridad)
-- [📊 Variables Meteorológicas](#-variables-meteorológicas)
-- [💾 Sistema de Caché](#-sistema-de-caché)
-- [🎨 Interfaz Mejorada](#-interfaz-mejorada)
-- [📱 Responsividad](#-responsividad)
-- [🧪 Testing](#-testing)
-- [📚 Documentación API](#-documentación-api)
-- [🚧 Mejoras Futuras](#-mejoras-futuras)
-- [🤝 Contribuir](#-contribuir)
-- [📄 Licencia](#-licencia)
-
----
-
-## ✨ Características
-
-### ✅ Implementadas
-
-- 🌍 **Búsqueda Global** - Encuentra el clima de cualquier ciudad del mundo
-- 🌡️ **11+ Variables Meteorológicas** - Temperatura, humedad, presión, UV, etc.
-- ⚡ **Caché Inteligente** - Almacena resultados por 60 minutos (configurable)
-- 🎨 **UI Moderna** - Diseño responsivo con gradientes y animaciones
-- 📱 **100% Responsivo** - Funciona perfecto en móvil, tablet y desktop
-- 🚀 **Rendimiento Optimizado** - Búsquedas en caché, lazy loading, minificación
-- 🔒 **Seguro** - Arquitectura preparada para APIs con autenticación
-- 📖 **Bien Documentado** - JSDoc, comentarios estratégicos, guías
-- ♿ **Accesible** - ARIA labels, contraste de colores WCAG
-- 🌙 **Preparado para Dark Mode** - Estructura CSS lista para implementar
-
-### 🚧 Planeadas
-
-- 🌙 Modo oscuro
-- 📅 Pronóstico de 7 días
-- 🔔 Alertas meteorológicas
-- 💾 Historial de búsquedas
-- 🗺️ Mapa interactivo
-- 🌐 Multiidioma (i18n)
+- [Características](#-características)
+- [Inicio Rápido](#-inicio-rápido)
+- [Guía de Uso](#-guía-de-uso)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Seguridad](#-seguridad)
+- [Variables Meteorológicas](#-variables-meteorológicas)
+- [Sistema de Caché](#-sistema-de-caché)
+- [Interfaz Mejorada](#-interfaz-mejorada)
+- [Responsividad](#-responsividad)
+- [Testing](#-testing)
+- [Documentación API](#-documentación-api)
+- [Mejoras Futuras](#-mejoras-futuras)
+- [Contribuir](#-contribuir)
+- [Licencia](#-licencia)
 
 ---
 
-## 🚀 Inicio Rápido
+## Características
+
+### Implementadas
+
+- **Búsqueda Global** - Encuentra el clima de cualquier ciudad del mundo
+- **11+ Variables Meteorológicas** - Temperatura, humedad, presión, UV, etc.
+- **Caché Inteligente** - Almacena resultados por 60 minutos (configurable)
+- **UI Moderna** - Diseño responsivo con gradientes y animaciones
+- **100% Responsivo** - Funciona perfecto en móvil, tablet y desktop
+- **Rendimiento Optimizado** - Búsquedas en caché, lazy loading, minificación
+- **Seguro** - Arquitectura preparada para APIs con autenticación
+- **Bien Documentado** - JSDoc, comentarios estratégicos, guías
+- **Accesible** - ARIA labels, contraste de colores WCAG
+- **Preparado para Dark Mode** - Estructura CSS lista para implementar
+
+### Planeadas
+
+- Modo oscuro
+- Pronóstico de 7 días
+- Alertas meteorológicas
+- Historial de búsquedas
+- Mapa interactivo
+- Multiidioma (i18n)
+
+---
+
+## Inicio Rápido
 
 ### Requisitos Previos
 
@@ -103,11 +103,11 @@ npx http-server
 # Acceder a http://localhost:8080
 ```
 
-✅ **¡Listo!** La app está funcionando
+**¡Listo!** La app está funcionando
 
 ---
 
-## 📖 Guía de Uso
+## Guía de Uso
 
 ### Uso Básico (2 minutos)
 
@@ -144,13 +144,13 @@ npx http-server
 ### Ejemplos de Búsqueda
 
 ```
-✅ Madrid                    → Funciona
-✅ Madrid, España            → Funciona
-✅ New York                  → Funciona
-✅ Tokyo                     → Funciona
-✅ São Paulo                 → Funciona
-❌ asdfghj                   → Error: "Ciudad no encontrada"
-❌ (dejando vacío)           → Error: "Por favor ingresa un nombre"
+Madrid                    → Funciona
+Madrid, España            → Funciona
+New York                  → Funciona
+Tokyo                     → Funciona
+São Paulo                 → Funciona
+asdfghj                   → Error: "Ciudad no encontrada"
+(dejando vacío)           → Error: "Por favor ingresa un nombre"
 ```
 
 ### Caché (Transparente para el usuario)
@@ -179,26 +179,26 @@ Segunda búsqueda: "Madrid" (en los próximos 60 min)
 
 ---
 
-## 🏗️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 weather-app/
 │
-├── 📄 index.html                          # Página principal
-├── 📄 README.md                           # Este archivo
-├── 📄 .gitignore                          # Archivos a ignorar en Git
+├── index.html                          # Página principal
+├── README.md                           # Este archivo
+├── .gitignore                          # Archivos a ignorar en Git
 │
-├── 📁 css/
+├── css/
 │   └── styles.css                         # Estilos modernos y responsivos
 │                                          # (Variable root colors, grid layout)
 │
-├── 📁 js/
-│   ├── main.js                            # 🎯 Orquestación principal
+├── js/
+│   ├── main.js                            # Orquestación principal
 │   │                                      # - Event listeners
 │   │                                      # - Flujo de datos
 │   │                                      # - Manejo de caché
 │   │
-│   ├── 📁 api/                            # 🌐 Servicios de APIs externas
+│   ├── api/                               # Servicios de APIs externas
 │   │   ├── weatherService.js              # Open-Meteo Weather API
 │   │   │                                  # - 11+ variables meteorológicas
 │   │   │                                  # - Manejo de errores HTTP
@@ -207,7 +207,7 @@ weather-app/
 │   │                                      # - Convierte ciudad → coordenadas
 │   │                                      # - Validación de entrada
 │   │
-│   ├── 📁 ui/                             # 🎨 Componentes visuales
+│   ├── ui/                                # Componentes visuales
 │   │   ├── renderWeather.js               # Renderiza datos en DOM
 │   │   │                                  # - Grid moderno con 10+ items
 │   │   │                                  # - Formateo visual
@@ -217,22 +217,22 @@ weather-app/
 │   │                                      # - Error
 │   │                                      # - Success
 │   │
-│   └── 📁 utils/                          # 🔧 Utilidades reutilizables
-│       ├── cache.js                       # 💾 Sistema de caché
+│   └── utils/                             # Utilidades reutilizables
+│       ├── cache.js                       # Sistema de caché
 │       │                                  # - localStorage wrapper
 │       │                                  # - TTL (Time To Live)
 │       │                                  # - Expiración automática
 │       │
-│       └── formatters.js                  # 📝 Formateo de datos
+│       └── formatters.js                  # Formateo de datos
 │                                          # - Temperatura
 │                                          # - Humedad
 │                                          # - Presión
 │                                          # - 10+ funciones
 │
-├── 📁 assets/
-│   └── icons/                             # 🎨 Iconos (futuro)
+├── assets/
+│   └── icons/                             # Iconos (futuro)
 │
-└── 📁 backend/ (Opcional - Para prod)
+└── backend/ (Opcional - Para prod)
     ├── server.js                          # Express server (Backend proxy)
     ├── .env                               # Variables de entorno (NUNCA en Git)
     ├── package.json
@@ -242,11 +242,11 @@ weather-app/
 
 ---
 
-## 🔒 Seguridad
+## Seguridad
 
 ### Arquitectura Actual (Segura)
 
-✅ **Open-Meteo API es pública y gratuita**
+**Open-Meteo API es pública y gratuita**
 ```javascript
 // No requiere autenticación
 https://api.open-meteo.com/v1/forecast
@@ -255,15 +255,15 @@ https://geocoding-api.open-meteo.com/v1/search
 
 ### Para APIs con Autenticación
 
-⚠️ **NUNCA hardcodees claves en el código**
+**NUNCA hardcodees claves en el código**
 
-#### ❌ INCORRECTO
+#### INCORRECTO
 ```javascript
-// ❌ PELIGRO: Visible en GitHub
+// PELIGRO: Visible en GitHub
 const API_KEY = "sk_live_abc123def456xyz789";
 ```
 
-#### ✅ CORRECTO: Backend Proxy
+#### CORRECTO: Backend Proxy
 
 ```javascript
 // Frontend NO ve la clave
@@ -281,14 +281,14 @@ const url = `https://api.weather.com/v1/forecast?key=${API_KEY}`;
 
 ### Mejores Prácticas Implementadas
 
-✅ **Input Validation** - Valida ciudad antes de enviar
+**Input Validation** - Valida ciudad antes de enviar
 ```javascript
 if (!city.trim()) {
   throw new Error("Ingresa una ciudad");
 }
 ```
 
-✅ **Error Handling** - Mensajes descriptivos sin exponer errores internos
+**Error Handling** - Mensajes descriptivos sin exponer errores internos
 ```javascript
 catch (err) {
   showError("Error al obtener clima"); // Usuario
@@ -296,16 +296,16 @@ catch (err) {
 }
 ```
 
-✅ **CORS Headers** - Backend prepara para CORS
+**CORS Headers** - Backend prepara para CORS
 ```javascript
 app.use(cors());
 res.setHeader('Access-Control-Allow-Origin', '*');
 ```
 
-✅ **HTTPS Only** - Producción debe usar HTTPS
+**HTTPS Only** - Producción debe usar HTTPS
 ```
-https://tu-app.vercel.app ✅
-http://tu-app.vercel.app  ❌
+https://tu-app.vercel.app 
+http://tu-app.vercel.app  
 ```
 
 ### Checklist de Seguridad
@@ -339,36 +339,8 @@ http://tu-app.vercel.app  ❌
 | **Visibilidad** | 👁️ | km/m | 0+ | Distancia de visibilidad |
 | **Código WMO** | 🎯 | 0-99 | - | Código meteorológico (interno) |
 
-### Interpretación de Datos
 
-#### Humedad
-```
-< 30%  → Seco (bajo confort)
-30-60% → Normal (ideal)
-60-80% → Húmedo
-> 80%  → Muy húmedo
-```
-
-#### Índice UV
-```
-0-2    → Bajo (protección mínima)
-3-5    → Moderado (usar protector)
-6-7    → Alto (protección solar)
-8-10   → Muy alto (evitar sol)
-11+    → Extremo (peligroso)
-```
-
-#### Cobertura de Nubes
-```
-0-10%   → Despejado
-10-50%  → Parcialmente nublado
-50-90%  → Nublado
-90-100% → Muy nublado
-```
-
----
-
-## 💾 Sistema de Caché
+## Sistema de Caché
 
 ### Cómo Funciona
 
@@ -387,7 +359,7 @@ http://tu-app.vercel.app  ❌
       │             │
       ▼             ▼
    CACHÉ      APIs EXTERNAS
-   ⚡ 0.1s      ⏱️ 2-3s
+    0.1s          2-3s
       │             │
       │             ▼
       │         Guardar en caché
@@ -401,12 +373,12 @@ http://tu-app.vercel.app  ❌
 
 ### Características
 
-✅ **TTL (Time To Live)** - 60 minutos por defecto
+**TTL (Time To Live)** - 60 minutos por defecto
 ```javascript
 setCacheData(city, data, 60); // 60 minutos
 ```
 
-✅ **Expiración Automática** - Se limpia al expirar
+**Expiración Automática** - Se limpia al expirar
 ```javascript
 const age = now - cacheEntry.timestamp;
 if (age > cacheEntry.ttl) {
@@ -414,7 +386,7 @@ if (age > cacheEntry.ttl) {
 }
 ```
 
-✅ **Storage Local** - Persiste en el navegador
+**Storage Local** - Persiste en el navegador
 ```
 localStorage:
 ├─ weather_madrid: { data, timestamp, ttl }
@@ -476,128 +448,6 @@ localStorage.removeItem('weather_madrid');
 localStorage.clear();
 ```
 
----
-
-## 🎨 Interfaz Mejorada
-
-### Diseño Responsivo
-
-#### Desktop (1200px+)
-```
-┌────────────────────────────────────────┐
-│       🌤️ Weather App                   │
-│  ┌──────────────────────────────────┐  │
-│  │ [Buscar ciudad...] [Buscar]      │  │
-│  └──────────────────────────────────┘  │
-│                                        │
-│  ┌──────────────────────────────────┐  │
-│  │ 🏙️ Madrid, Spain                │  │
-│  │ ☀️ Despejado                     │  │
-│  │                                  │  │
-│  │ 🌡️ 22°C  (Se siente: 21°C)     │  │
-│  │                                  │  │
-│  │ 💨 Viento   💧 Humedad          │  │
-│  │ 12 km/h    65% (Normal)         │  │
-│  │                                  │  │
-│  │ 🌡️ Presión 🌧️ Precipitación    │  │
-│  │ 1013 hPa   Sin lluvia           │  │
-│  │                                  │  │
-│  │ ☁️ Nubes   🌞 Índice UV         │  │
-│  │ 25%        3 (Moderado)         │  │
-│  │                                  │  │
-│  │ 👁️ Visibilidad                 │  │
-│  │ 10 km                            │  │
-│  └──────────────────────────────────┘  │
-└────────────────────────────────────────┘
-```
-
-#### Mobile (360px+)
-```
-┌──────────────────────┐
-│  🌤️ Weather App      │
-│ ┌──────────────────┐ │
-│ │[Buscar...]      │ │
-│ │    [Buscar]     │ │
-│ └──────────────────┘ │
-│                      │
-│ ┌──────────────────┐ │
-│ │🏙️ Madrid, Spain │ │
-│ │☀️ Despejado    │ │
-│ │🌡️ 22°C        │ │
-│ │(Se siente: 21°C)│ │
-│ │─────────────────│ │
-│ │💨 Viento  12km/h│ │
-│ │💧 Humedad 65%   │ │
-│ │🌡️ Presión 1013  │ │
-│ │🌧️ Lluvia  -     │ │
-│ │☁️ Nubes  25%    │ │
-│ │🌞 UV Index 3    │ │
-│ │👁️ Visibilidad   │ │
-│ │10 km             │ │
-│ └──────────────────┘ │
-└──────────────────────┘
-```
-
-### Paleta de Colores
-
-```css
-:root {
-  --primary: #4facfe;      /* Azul principal */
-  --secondary: #00f2fe;    /* Cian secundario */
-  --dark: #333;            /* Texto oscuro */
-  --light: #f5f5f5;        /* Fondo claro */
-  --gray: #999;            /* Gris neutro */
-  --border: #e0e0e0;       /* Bordes */
-}
-```
-
-### Animaciones
-
-```css
-/* Entrada de tarjeta */
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Efecto hover en items */
-.weather-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Fade in para estado */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-```
-
-### Accesibilidad
-
-```html
-<!-- Semantic HTML -->
-<form id="search-form">
-  <input type="text" required autocomplete="off">
-  <button type="submit">Buscar</button>
-</form>
-
-<!-- ARIA Labels -->
-<div id="status" role="status" aria-live="polite"></div>
-<section aria-label="Información del clima"></section>
-
-<!-- Contraste de colores WCAG AA -->
-<!-- Todos los textos cumplen ratio 4.5:1 o superior -->
-```
-
----
-
 ## 📱 Responsividad
 
 ### Breakpoints Utilizados
@@ -648,7 +498,7 @@ Dispositivos soportados:
 1. Escribe: "Madrid"
 2. Haz click en Buscar
 3. Verifica: Muestra clima y temperatura
-✅ PASS
+PASS
 ```
 
 #### Test 2: Caché Funcionando
@@ -658,7 +508,7 @@ Dispositivos soportados:
 3. Busca: "Madrid" nuevamente
 4. Verifica: Console dice "Usando caché"
 5. Verifica: Carga al instante (<0.1s)
-✅ PASS
+PASS
 ```
 
 #### Test 3: Validación de Input
@@ -666,7 +516,7 @@ Dispositivos soportados:
 1. Deja el input vacío
 2. Haz click en Buscar
 3. Verifica: Muestra error "Por favor ingresa..."
-✅ PASS
+PASS
 ```
 
 #### Test 4: Ciudad No Existe
@@ -674,7 +524,7 @@ Dispositivos soportados:
 1. Escribe: "asdfghj"
 2. Haz click en Buscar
 3. Verifica: Muestra error "Ciudad no encontrada"
-✅ PASS
+PASS
 ```
 
 #### Test 5: Responsividad
@@ -683,7 +533,7 @@ Dispositivos soportados:
 2. Ctrl+Shift+M
 3. Prueba diferentes tamaños
 4. Verifica: Todo se ve bien en todos los tamaños
-✅ PASS
+PASS
 ```
 
 #### Test 6: Variables Completas
@@ -702,30 +552,6 @@ Dispositivos soportados:
 ✅ PASS
 ```
 
-### Test Automatizado (Futuro)
-
-```javascript
-// jest.config.js (TODO)
-describe('Weather App', () => {
-  test('busca ciudad correctamente', async () => {
-    const location = await getCoordinates('Madrid');
-    expect(location.name).toBe('Madrid');
-  });
-
-  test('obtiene clima con éxito', async () => {
-    const weather = await getWeather(40.4, -3.6);
-    expect(weather.temperature).toBeDefined();
-  });
-
-  test('caché guarda datos', () => {
-    setCacheData('Madrid', { test: 'data' });
-    const cached = getCacheData('Madrid');
-    expect(cached).toBeDefined();
-  });
-});
-```
-
----
 
 ## 📚 Documentación API
 
@@ -868,73 +694,73 @@ export function getWindDirection(degrees) { ... }
 
 ---
 
-## 🚧 Mejoras Futuras
+## Mejoras Futuras
 
 ### Corto Plazo (Próximas 2 semanas)
 
-- [ ] **🌙 Modo Oscuro**
+- [ ] **Modo Oscuro**
   - Toggle light/dark en navbar
   - Guardar preferencia en localStorage
   - Usar `prefers-color-scheme` CSS
   - Colores WCAG AA compliant
 
-- [ ] **💾 Historial de Búsquedas**
+- [ ] **Historial de Búsquedas**
   - Guardar últimas 10 ciudades
   - Botones rápidos para acceso
   - Borrar historial
 
-- [ ] **📍 Geolocalización Automática**
+- [ ] **Geolocalización Automática**
   - Detectar ubicación del usuario
   - Mostrar clima local al abrir
   - Permiso del usuario (GDPR)
 
 ### Mediano Plazo (Próximas 4 semanas)
 
-- [ ] **📅 Pronóstico de 7 Días**
+- [ ] **Pronóstico de 7 Días**
   - Predicción daily/hourly
   - Gráficos de temperatura
   - Cambios de clima
 
-- [ ] **🗺️ Mapa Interactivo**
+- [ ] **Mapa Interactivo**
   - Leaflet/Mapbox integración
   - Click para buscar clima
   - Marcadores de ciudades
 
-- [ ] **🔔 Alertas Meteorológicas**
+- [ ] **Alertas Meteorológicas**
   - Notificaciones push
   - Umbrales configurables
   - Historial de alertas
 
-- [ ] **🌐 Multiidioma**
+- [ ] **Multiidioma**
   - Español, Inglés, Francés
   - i18n framework
   - Selector de idioma
 
 ### Largo Plazo (Futuro)
 
-- [ ] **📱 App Móvil Nativa**
+- [ ] **App Móvil Nativa**
   - React Native / Flutter
   - iOS y Android
 
-- [ ] **📊 Dashboard Estadísticas**
+- [ ] **Dashboard Estadísticas**
   - Gráficos históricos
   - Tendencias climáticas
   - Comparativas mensuales
 
-- [ ] **🔐 Backend Seguro**
+- [ ] **Backend Seguro**
   - Express/Node.js server
   - JWT authentication
   - Base de datos (MongoDB)
   - Rate limiting
 
-- [ ] **⚡ Progressive Web App**
+- [ ] **Progressive Web App**
   - Service workers
   - Offline mode
   - Instalable en escritorio
 
 ---
 
-## 🤝 Contribuir
+## Contribuir
 
 ### Cómo Reportar Bugs
 
@@ -1004,48 +830,21 @@ Ambiente:
    - Referencia el issue relacionado
    - Incluye screenshots si es visual
 
-### Guía de Estilo
-
-```javascript
-// ✅ BIEN
-function formatTemperature(temp) {
-  return `${Math.round(temp)}°C`;
-}
-
-// ❌ MAL
-function ft(t) {
-  return `${Math.round(t)}°C`;
-}
-
-// ✅ Usa nombres descriptivos
-const isValidCity = city.length > 2;
-
-// ❌ Evita abreviaturas
-const isVC = c.len > 2;
-
-// ✅ Comenta lógica compleja
-// Calcular índice de sensación térmica
-const feelsLike = temp - (windspeed * 0.5);
-
-// ❌ No comentes lo obvio
-const temp = data.temperature; // Obtener temperatura
-```
-
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo licencia **MIT**.
 
 Puedes:
-- ✅ Usar comercialmente
-- ✅ Modificar el código
-- ✅ Distribuir
-- ✅ Usar privadamente
+- Usar comercialmente
+- Modificar el código
+- Distribuir
+- Usar privadamente
 
 Debes:
-- ⚠️ Incluir licencia y copyright
-- ⚠️ Documentar cambios mayores
+- Incluir licencia y copyright
+- Documentar cambios mayores
 
 ```
 MIT License (c) 2026 Emmanuel Ross
@@ -1057,16 +856,16 @@ Ver archivo [LICENSE](./LICENSE) para términos completos.
 
 ---
 
-## 📞 Contacto y Soporte
+## Contacto y Soporte
 
-- 💬 **Issues**: [GitHub Issues](https://github.com/tu-usuario/weather-app/issues)
-- 💡 **Discussions**: [GitHub Discussions](https://github.com/tu-usuario/weather-app/discussions)
-- 📧 **Email**: tu-email@example.com
-- 🐦 **Twitter**: [@tu-twitter](https://twitter.com)
+- **Issues**: [GitHub Issues](https://github.com/tu-usuario/weather-app/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/tu-usuario/weather-app/discussions)
+- **Email**: tu-email@example.com
+- **Twitter**: [@tu-twitter](https://twitter.com)
 
 ---
 
-## 🙏 Agradecimientos
+## Agradecimientos
 
 ### APIs Utilizadas
 - **Open-Meteo** - APIs meteorológicas y de geocodificación gratuitas
@@ -1079,7 +878,7 @@ Ver archivo [LICENSE](./LICENSE) para términos completos.
 - **Comunidad Frontend** - Best practices y feedback
 
 ### Contribuidores
-- 👨‍💻 [Emmanuel Ross](https://github.com/EmmanuelRoss) - Autor principal
+- [Emmanuel Ross](https://github.com/EmmanuelRoss) - Autor principal
 
 ---
 
@@ -1099,35 +898,6 @@ Performance:      95/100 (Lighthouse)
 
 ---
 
-## 🗺️ Roadmap
-
-### Q1 2026 (Ahora - Marzo)
-- [x] Core functionality
-- [x] Caché system
-- [x] UI mejorada
-- [x] Documentación completa
-- [ ] Dark mode
-
-### Q2 2026 (Abril - Junio)
-- [ ] Pronóstico 7 días
-- [ ] Historial búsquedas
-- [ ] Geolocalización
-- [ ] Tests automatizados
-
-### Q3 2026 (Julio - Septiembre)
-- [ ] Backend Node.js
-- [ ] Base de datos
-- [ ] Autenticación
-- [ ] PWA features
-
-### Q4 2026 (Octubre - Diciembre)
-- [ ] App móvil (React Native)
-- [ ] Analytics
-- [ ] Monetización
-- [ ] v3.0 release
-
----
-
 ## 📚 Referencias
 
 - [Open-Meteo API Docs](https://open-meteo.com/en/docs)
@@ -1138,14 +908,14 @@ Performance:      95/100 (Lighthouse)
 
 ---
 
-## 🎉 ¡Gracias por usar Weather App!
+## ¡Gracias por usar Weather App!
 
 Si te fue útil, por favor:
-- ⭐ **Star en GitHub** (ayuda a otros a encontrarlo)
-- 📣 **Comparte** con amigos desarrolladores
-- 🐛 **Reporta bugs** si encuentras alguno
-- 💡 **Sugiere mejoras** en Discussions
-- 🤝 **Contribuye** código o documentación
+- **Star en GitHub** (ayuda a otros a encontrarlo)
+- **Comparte** con amigos desarrolladores
+- **Reporta bugs** si encuentras alguno
+- **Sugiere mejoras** en Discussions
+- **Contribuye** código o documentación
 
 **Happy Weather Checking! 🌤️☀️🌧️❄️**
 
