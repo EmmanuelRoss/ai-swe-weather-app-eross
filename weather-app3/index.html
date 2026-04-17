@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌤️ Weather App - Clima en Tiempo Real</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main class="app">
+    <!-- Título -->
+    <h1>🌤️ Generation - Weather App</h1>
+
+    <!-- Formulario de búsqueda -->
+    <form id="search-form" class="search">
+      <input 
+        type="text" 
+        id="city" 
+        placeholder="Buscar ciudad..." 
+        required
+        autocomplete="off"
+      >
+      <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Zona de mensajes (carga, errores, etc) -->
+    <div id="status" role="status" aria-live="polite"></div>
+
+    <!-- Tarjeta de clima (inicialmente oculta) -->
+    <section id="weather" class="weather-card hidden" aria-label="Información del clima"></section>
+  </main>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
